@@ -6,6 +6,7 @@ images/**
 **/tsconfig.json
 **/tsconfig.base.json
 contributing.md
+BUILD.md
 .travis.yml
 client/node_modules/**
 !client/node_modules/vscode-jsonrpc/**
