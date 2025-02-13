@@ -1,0 +1,19 @@
+{
+	"name": "lsp-hcl-tf-version",
+	"description": "hcl terraform module validator",
+	"version": "1.0.0",
+	"author": "Marcio Hassegawa",
+	"license": "MIT",
+	"engines": {
+		"node": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hassegawa/hcl-tf-module-version-validator"
+	},
+	"dependencies": {
+		"vscode-languageserver": "^9.0.1",
+		"vscode-languageserver-textdocument": "^1.0.11"
+	},
+	"scripts": {}
+}

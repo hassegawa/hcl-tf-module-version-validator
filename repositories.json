@@ -1,0 +1,35 @@
+{
+    "terraform-module-cia-application-insights": {
+        "tags": {
+            "1.0.0": {
+                "deprecated": true
+            },
+            "1.1.0": {
+                "deprecated": true
+            },
+            "1.1.1": {
+                "deprecated": false
+            },
+            "1.1.2": {
+                "deprecated": false
+            },
+            "1.2.2": {
+                "deprecated": false
+            }
+        },
+        "url": "https://dev.azure.com/CIA/TERRAFORM-MODULES/_git/terraform-module-cia-application-insights",
+        "default_branch": "refs/heads/master"
+    },
+    "terraform-module-cia-automation-account": {
+        "tags": {
+            "0.1.0": {
+                "deprecated": true
+            },
+            "1.0.0": {
+                "deprecated": false
+            }
+        },
+        "url": "https://dev.azure.com/CIA-SA/TERRAFORM-MODULES/_git/terraform-module-cia-automation-account",
+        "default_branch": "refs/heads/master"
+    }
+}

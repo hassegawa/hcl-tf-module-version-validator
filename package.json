@@ -1,0 +1,98 @@
+{
+	"name": "lsp-hcl-tf-version",
+	"description": "hcl terraform module version validator",
+	"author": "Marcio Hassegawa",
+	"license": "MIT",
+	"version": "1.0.0",
+	"icon": "img/icone.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hassegawa/hcl-tf-module-version-validator"
+	},
+	"publisher": "HCL-TFmoduleversionvalidator",
+	"categories": [
+		"Linters",
+		"Snippets"
+	],
+	"keywords": [
+		"multi-root ready"
+	],
+	"engines": {
+		"vscode": "^1.75.0"
+	},
+	"activationEvents": [
+		"onLanguage:hcl"
+	],
+	"main": "./client/out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "configuration",
+			"properties": {
+				"languageServerHclVersion.maxNumberOfProblems": {
+					"scope": "resource",
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the server."
+				},
+				"languageServerHclVersion.trace.server": {
+					"scope": "window",
+					"type": "string",
+					"enum": [
+						"off",
+						"messages",
+						"verbose"
+					],
+					"default": "off",
+					"description": "Traces the communication between VS Code and the language server."
+				},
+				"languageServerHclVersion.listOfVersionsPath": {
+					"scope": "resource",
+					"type": "string",
+					"default": "C:/Projetos/repositories.json",
+					"description": "Path to a json file with versions"
+				},
+				"languageServerHclVersion.regexFindModuleVersion": {
+					"scope": "resource",
+					"type": "string",
+					"default": "TERRAFORM-MODULES\\/([^?]+)\\?ref=(\\d+\\.\\d+\\.\\d+)",
+					"description": "Regex to find a module version"
+				},
+				"languageServerHclVersion.regexMatchPosition": {
+					"scope": "resource",
+					"type": "number",
+					"default": 0,
+					"description": "Match 1 on regex, or position 0"
+				},"languageServerHclVersion.regexModuleNamePosition": {
+					"scope": "resource",
+					"type": "number",
+					"default": 1,
+					"description": "Group 1 on regex"
+				},"languageServerHclVersion.regexModuleVersionPosition": {
+					"scope": "resource",
+					"type": "number",
+					"default": 2,
+					"description": "Group 2 on regex"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -b",
+		"watch": "tsc -b -w",
+		"lint": "eslint",
+		"postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
+		"test": "sh ./scripts/e2e.sh"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "^20",
+		"eslint": "^9.13.0",
+		"mocha": "^10.3.0",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.16.0"
+	}
+}
