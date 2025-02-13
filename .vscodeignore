@@ -2,6 +2,7 @@
 **/*.ts
 **/*.map
 .gitignore
+images/**
 **/tsconfig.json
 **/tsconfig.base.json
 contributing.md
