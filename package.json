@@ -3,7 +3,7 @@
 	"description": "hcl terraform module version validator",
 	"author": "Marcio Hassegawa",
 	"license": "MIT",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"icon": "img/icone.png",
 	"repository": {
 		"type": "git",

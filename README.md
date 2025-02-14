@@ -10,7 +10,7 @@ The "lsp-hcl-tf-version" extension for Visual Studio Code helps users validate T
 ## Repositories path
   ![path](https://raw.githubusercontent.com/hassegawa/hcl-tf-module-version-validator/refs/heads/main/images/repositories.path.PNG)
 
-### erro file not existe
+### Error: file does not exist
   ![erro_file](https://raw.githubusercontent.com/hassegawa/hcl-tf-module-version-validator/refs/heads/main/images/repositories.NG.png)
 
 ## Regex validation
@@ -22,7 +22,7 @@ The "lsp-hcl-tf-version" extension for Visual Studio Code helps users validate T
 ## Regex on code
   ![regex_value](https://raw.githubusercontent.com/hassegawa/hcl-tf-module-version-validator/refs/heads/main/images/regex.found.PNG)
 
-## Warnigs
+## Warnings
   ![warnigs](https://raw.githubusercontent.com/hassegawa/hcl-tf-module-version-validator/refs/heads/main/images/warning.exemple.PNG)
 
 ## Resolve
